@@ -1,0 +1,260 @@
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.page-header p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* News Page Styles */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.news-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+.news-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 1.5rem;
+}
+
+.news-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.news-content p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.news-date {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+/* Culture Page Styles */
+.culture-sections {
+  space-y: 3rem;
+}
+
+.culture-section {
+  margin-bottom: 3rem;
+}
+
+.culture-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.culture-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.culture-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.culture-card:hover {
+  transform: translateY(-5px);
+}
+
+.culture-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.culture-card h4 {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+  color: #333;
+}
+
+.culture-card p {
+  padding: 0 1rem 1.5rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Lifestyle Page Styles */
+.lifestyle-categories {
+  space-y: 3rem;
+}
+
+.lifestyle-category {
+  margin-bottom: 3rem;
+}
+
+.lifestyle-category h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.lifestyle-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.lifestyle-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.lifestyle-card:hover {
+  transform: translateY(-5px);
+}
+
+.lifestyle-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.lifestyle-card h4 {
+  font-size: 1.3rem;
+  margin: 1rem;
+  color: #333;
+}
+
+.lifestyle-card p {
+  padding: 0 1rem 1.5rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Recipes Page Styles */
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 2rem;
+}
+
+.recipe-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.recipe-info {
+  padding: 1.5rem;
+}
+
+.recipe-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.recipe-info p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.recipe-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-container {
+    padding: 1rem;
+  }
+  
+  .page-header h1 {
+    font-size: 2rem;
+  }
+  
+  .news-grid,
+  .culture-grid,
+  .lifestyle-cards,
+  .recipes-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.recipe-meta span {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.recipe-meta span:first-child {
+  color: #e67e22; /* Orange for time */
+}
+
+.recipe-meta span:nth-child(2) {
+  color: #27ae60; /* Green for servings */
+}
+
+.recipe-meta span:last-child {
+  color: #f1c40f; /* Yellow for rating */
+}

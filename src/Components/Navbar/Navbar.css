@@ -10,6 +10,31 @@
     )
 }
 
+
+.NavLinks a.active {
+  color: salmon; 
+  font-weight: bold;
+  border-bottom: 2px solid salmon; 
+}
+
+.NavLinks a {
+  text-decoration: none;
+  color: salmon; 
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.NavLinks a:hover {
+ color: salmon;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.Dropdown {
+  display: none; 
+}
+
 .Logo-link{
     text-decoration: none;
 }

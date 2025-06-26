@@ -169,7 +169,7 @@ function NewsPage() {
           position: "relative",
           background: `linear-gradient(to right, ${getGradientColors(currentFact.color)})`,
           overflow: "hidden",
-          height: "600px", // FIXED HEIGHT FOR ALL SLIDES
+          height: "600px", 
         }}
       >
         <div style={{ position: "absolute", inset: "0", backgroundColor: "rgba(0, 0, 0, 0.2)" }}></div>
@@ -183,7 +183,7 @@ function NewsPage() {
             padding: "0 1rem",
             height: "100%",
             display: "flex",
-            alignItems: "center", // CENTER CONTENT VERTICALLY
+            alignItems: "center", 
           }}
         >
           <div

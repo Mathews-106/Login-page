@@ -1,4 +1,5 @@
 import React from 'react' 
+import './App.css'
 import HomePage from './Homepage.jsx'
 import Navbar from "./Components/Navbar/Navbar.jsx"
 import Footer from "./Components/Footer/Footer.jsx"
